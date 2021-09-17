@@ -123,14 +123,14 @@ button{
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
-  background: rgb(128, 233, 7);
+  background: #f12e27;
   padding: 10px;
   border-radius: 5px;
-  color: rgb(28, 81, 238);
+  color: white;
 }
 
 button:hover {
   transition: all 0.3s ease-out;  
-  background: #cdf155;
-  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18
+  background: #f12e27;
+  background: #f9a29f;
 }
