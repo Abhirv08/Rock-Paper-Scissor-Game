@@ -60,7 +60,7 @@ var lose = (userChoice, compChoice) => {
     compScore_span.innerHTML = compScore;
     passData( userScore, compScore);
     compResponse.innerHTML=changeToFullName(compChoice);
-    showResult_div.innerHTML = "LOL ! You lose 😌 ! ! !";
+    showResult_div.innerHTML = "OOPS ! You lose 😌 ! ! !";
     showResult_div.classList.add("red-text");
     setTimeout(() => {
         showResult_div.classList.remove("red-text");
