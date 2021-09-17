@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>result</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;    
+            font-family: cursive;         
+        }
+
+      header>h1{
+        text-align: center;
+        padding: 20px;
+        background: royalblue;
+        font-size: 40px;
+        color: white;
+      }
+
+      .finalscore{
+          padding: 20px;
+          margin: 10px;
+      }
+
+      .scores{
+          text-align: center;
+          font-size: 20px;
+          margin: 20px;
+      }
+       
+      footer>div{
+          text-align: center;
+          margin: 10px;
+          font-size: 30px;
+      }
+
+     
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Game Over</h1>
+        <h1>Here is your result</h1>
+    </header>
+
+    <section>
+        <div class="finalscore">
+            <div class="scores"> <span>Your's Score : </span><span id="finaluserscore">0</span></div> 
+             <div class="scores"> <span>Computer's Score : </span><span id="finalcompscore">0</span> </div>
+         </div>
+
+         <footer><div id="winorlose"></div></footer>
+    </section>
+    
+</body>
+<script src="main.js"></script>
+<script>
+    var userscore=localStorage.getItem("finalUserScore");
+    var compscore=localStorage.getItem("finalCompScore");
+    document.getElementById("finaluserscore").innerHTML=userscore;
+    document.getElementById("finalcompscore").innerHTML=compscore;
+
+    if(userscore>compscore){
+        document.getElementById("winorlose").innerHTML= "Congrats !!!! You Won";        
+    }
+
+    else if(userscore<compscore){
+        document.getElementById("winorlose").innerHTML= "You Lost. <br> Better Luck Next Time";        
+    }
+
+    else{
+        document.getElementById("winorlose").innerHTML= "It's a drawww!!!";
+    }
+
+</script>
+</html>
